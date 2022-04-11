@@ -140,7 +140,7 @@ Expected run time: 1 minute.
 	1. Update the 'local_directory' variable to the folder containing the 'cell_distribution_kde' folder on your local machine.
 	2. Run the script.
 	3. Outputs include:
-	a. Kernel density plot of the distribution of presynaptic cells (cell_distribution_kde_plot.pdf).
+		a. Kernel density plot of the distribution of presynaptic cells (cell_distribution_kde_plot.pdf).
 
 8. coronal_atlas_plate_plot.py: 
 Input registered cell positions (.npy) and plot them in a brainrender scene.
@@ -150,6 +150,6 @@ Expected run time: 1 minute.
 	1. Update the 'local_directory' variable to the folder containing the 'coronal_atlas_plate_plot' folder on your local machine.
 	3. Run the script.
 	4. Press the 'q' key on the keyboard once the brainrender scene has rendered to save the screenshot.
-	5. Outputs include:
-	a. Image of coronal atlas plate at 4.4mm with presynaptic cell positions in blue (4400_pfc.png).
+	5. Output includes:
+		a. Image of coronal atlas plate at 4.4mm with presynaptic cell positions in blue (4400_pfc.png).
 

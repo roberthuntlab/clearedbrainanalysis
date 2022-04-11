@@ -52,8 +52,8 @@ Scripts #2, 3, and 4 should be run from the command line.
 
 1. stitching.py: 
 Stitch raw image data non-rigidly to a .npy array and export as .tif file series. Run in ClearMap environment.
-
 Expected run time: 5 minutes.
+
 	1. Run the code blocks up to line 29 to initialize dependencies.
 	2. Lines 28-87 are only needed to extract .npy arrays from .ims files. These arrays are already provided as sample data, thus can be ignored for testing the sample.
 	3. Run lines 88-159.

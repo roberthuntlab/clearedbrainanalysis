@@ -39,7 +39,8 @@ control_df = pd.read_csv(control_path)
 
 df = control_df
 
-#change x according to which axis you want to visualize (anterior/posterior, dorsal/ventral, or medial/lateral)
+#change x according to which axis you want to visualize (0 for anterior/posterior, 1 for dorsal/ventral, or 2 for medial/lateral)
+
 sns.kdeplot(data=df,
            x='coordinate_atlas_axis_0',
            common_norm=False,

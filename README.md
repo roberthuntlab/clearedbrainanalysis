@@ -1,6 +1,6 @@
 # clearedbrainanalysis
 Scripts to process light-sheet data acquired with a Zeiss Z1 Light Sheet microscope. 
-Stitching, registration, and visualization of data analyzed using tools from the ClearMap2 (@ChristophKirst) and @brainglobe suite.
+Stitching, registration, and visualization of data analyzed using tools from ClearMap2 (@ChristophKirst) and @brainglobe suites.
 
 SYSTEM REQUIREMENTS
 

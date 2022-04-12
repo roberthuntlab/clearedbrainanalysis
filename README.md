@@ -20,19 +20,19 @@ Detailed instructions for creating a new Anaconda enviornment for testing this s
 https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
 Dependencies and versions used: 
-Python 3.8.8
-brainrender 2.0.2.5
-bg-atlasapi 1.0.0
-h5py 2.10.0
-matplotlib 3.3.4
-numpy 1.19.5
-pandas 1.2.3
-scipy 1.6.1
-seaborn 0.11.1
-spyder 4.1.4
-tifffile 2020.8.13
-tk 8.6.10
-vedo 2020.4.2
+* Python 3.8.8
+* brainrender 2.0.2.5
+* bg-atlasapi 1.0.0
+* h5py 2.10.0
+* matplotlib 3.3.4
+* numpy 1.19.5
+* pandas 1.2.3
+* scipy 1.6.1
+* seaborn 0.11.1
+* spyder 4.1.4
+* tifffile 2020.8.13
+* tk 8.6.10
+* vedo 2020.4.2
 
 All dependencies can be installed from PyPi using:
 pip install package_name
@@ -42,12 +42,12 @@ https://christophkirst.github.io/ClearMap2Documentation/html/installation.html
 
 DEMO
 
-Scripts #1, 5, 6, 7, and 8 are best run within a Python IDE (we use Spyder) but can also be run from a command line interface using:
+* Scripts #1, 5, 6, 7, and 8 are best run within a Python IDE (we use Spyder) but can also be run from a command line interface using:
 python name_of_script
 
-Where name_of_script corresponds to the filepath of any one of the scripts listed below.
+where name_of_script corresponds to the filepath of any one of the scripts listed below.
 
-Scripts #2, 3, and 4 should be run from the command line.
+* Scripts #2, 3, and 4 should be run from the command line.
 
 
 1. stitching.py: 

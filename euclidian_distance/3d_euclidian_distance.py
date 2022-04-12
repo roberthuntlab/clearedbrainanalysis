@@ -16,7 +16,6 @@ import os
 
 #%% define local directory
 local_directory = '/path/to/folder/containing/euclidian_distance'
-local_directory = '/media/huntlab/HuntData1/code_upload/scripts/euclidian_distance'
 
 #%% load atlas and create dataframes to reference
 atlas = BrainGlobeAtlas("allen_mouse_10um", check_latest=False)
@@ -26,15 +25,15 @@ reference_image = atlas.reference
 
 list_of_animals = ['sst163']    #if more than one animal, list all animal data folders here
 
-animal_group_dict = {'sst163': 'control'}       #if more than one animal, list all animal numbers here with respecitve group names (eg. ctrl vs tbi)
+animal_group_dict = {'sst163': 'control'}       #if more than one animal, list all animal numbers here with respective group names (eg. ctrl vs tbi)
 
 #%%
 for i in range(len(list_of_animals)):
     selected_animal = i
     id_str = list_of_animals[selected_animal]
     
-    presynaptic_csv_path = os.path.join(local_directory, str(list_of_animals[selected_animal]), 'final_rabies/all_points.csv')
-    starter_csv_path = os.path.join(local_directory, str(list_of_animals[selected_animal]), 'final_starter/all_points.csv')
+    presynaptic_csv_path = os.path.join(local_directory, str(list_of_animals[selected_animal]), 'final_rabies/all_points.csv')  #from brainreg output
+    starter_csv_path = os.path.join(local_directory, str(list_of_animals[selected_animal]), 'final_starter/all_points.csv')     #from brainreg output
     folder_path = os.path.join(local_directory, str(list_of_animals[selected_animal]))
     
     # calculate centriod
@@ -99,7 +98,7 @@ for i in range(len(list_of_animals)):
     df_truncated = df[['3d_vector_length', 'animal_id', 'group']].copy()
     df_truncated.to_csv(os.path.join(local_directory, 'euclidian_distance_df.csv'))
     
-#%% histogram
+#%% create histogram
 
 df = df_truncated
 sns.histplot(data= df, 
@@ -114,4 +113,3 @@ plt.ylim([0,0.25])
 plt.savefig('path/to/save/folder/histogram.pdf')
 plt.show()
 plt.clf()
-

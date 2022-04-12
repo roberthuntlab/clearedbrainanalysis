@@ -5,11 +5,11 @@ Stitching, registration, and visualization of data analyzed using tools from Cle
 SYSTEM REQUIREMENTS
 
 Hardware Requirements
-All scripts can be run on the example data using standard desktop hardware.
+* All scripts can be run on the example data using standard desktop hardware.
 
 Software Requirements
-Linux: Ubuntu 18.04.5 LTS
-We have not tested the functionality on Windows or MacOS.
+* Linux: Ubuntu 18.04.5 LTS
+* We have not tested the functionality on Windows or MacOS.
 
 INSTALLATION GUIDE
 
